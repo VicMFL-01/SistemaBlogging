@@ -53,7 +53,7 @@ export class BlogComponent {
           </div>
           <div class="card-body">
             <img src="${noticia.imagen}" class="imgSizeCard" alt="">
-            <p class="card-text">${noticia.notice}</p>
+            <p class="custom-justify">${noticia.notice}</p>
           </div>
           <div class="card-footer text-body-secondary">
             ${dateFormat}
