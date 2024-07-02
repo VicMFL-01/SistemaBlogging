@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <section>
+        <div class="mb-3">
+          <label for="inTitle" class="form-label">Titulo</label>
+          <input type="text" class="form-control" id="inTitle" [(ngModel)]="newNotice.titulo">
+        </div>
+        <div class="mb-3">
+          <label for="inImg" class="form-label">Imagen</label>
+          <input type="text" class="form-control" id="inImg" [(ngModel)]="newNotice.imagen">
+        </div>
+        <div class="mb-3">
+          <label for="inNotice" class="form-label">Cuerpo noticia</label>
+          <textarea class="form-control" id="inNotice" rows="3" [(ngModel)]="newNotice.notice"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="inDate" class="form-label">Fecha publicación</label>
+          <input type="date" class="form-control" id="inDate" [(ngModel)]="newNotice.date">
+        </div>
+        <button type="button" class="btn btn-primary">Agregar</button>
+      </section>
+    </div>
+    <div class="col-md-6">
+      <section [innerHTML]="generateCardNotice()">
+
+      </section>
+    </div>
+  </div>
+</div>

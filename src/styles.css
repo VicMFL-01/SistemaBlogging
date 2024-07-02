@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.imgSizeCard {
+  height: 19rem;
+  width: 95%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.card
+ {
+  margin-bottom: 1rem;;
+ }
