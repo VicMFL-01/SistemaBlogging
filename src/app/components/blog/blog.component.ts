@@ -17,6 +17,13 @@ export class BlogComponent {
 
   }
 
+  inputsForm: any = {
+    titulo: "titulo de noticia",
+    imagen: "imagen url",
+    notice: "cuerpo de noticia",
+    date: "fecha de publicación"
+  };
+
   newNotice:Notice = {
       titulo:"",
       imagen: "",
@@ -62,6 +69,24 @@ export class BlogComponent {
       `
     })
     return html;
+  }
+
+  addNewNotice() {
+    let message = "";
+    Object.entries(this.newNotice).forEach(([key, value]) => {
+      if(value === "") {
+        message += "El campo " + this.inputsForm[key] + " es requerido.\n";
+      }
+    });
+
+
+    if(message.trim() !== ''){
+      alert(message);
+    } else {
+      this.noticias.push(this.newNotice)
+      this.newNotice = {titulo:"", imagen: "", notice: "", date: ""}
+    }
+
   }
 
 }
