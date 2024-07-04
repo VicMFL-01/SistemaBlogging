@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 static-section">
-      <section>
+      <section class="section-space">
         <div class="mb-3">
           <label for="inTitle" class="form-label">Titulo</label>
           <input type="text" class="form-control" id="inTitle" [(ngModel)]="newNotice.titulo">
@@ -22,7 +22,7 @@
       </section>
     </div>
     <div class="col-md-6 scrolling-section">
-      <section [innerHTML]="generateCardNotice()">
+      <section [innerHTML]="generateCardNotice()" class="section-space">
 
       </section>
     </div>

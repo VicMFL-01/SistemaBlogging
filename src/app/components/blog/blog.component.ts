@@ -59,7 +59,7 @@ export class BlogComponent {
             ${noticia.titulo}
           </div>
           <div class="card-body">
-            <img src="${noticia.imagen}" class="imgSizeCard" alt="">
+            <img src="${noticia.imagen}" class="imgSizeCard" alt="${noticia.titulo}">
             <p class="custom-justify">${noticia.notice}</p>
           </div>
           <div class="card-footer text-body-secondary">
